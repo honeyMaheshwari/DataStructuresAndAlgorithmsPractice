@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204C4F832BF20CAB00AB4156 /* BigONotationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C4F822BF20CAB00AB4156 /* BigONotationViewModel.swift */; };
 		205AAB0A2962C418003E4D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB092962C418003E4D17 /* AppDelegate.swift */; };
 		205AAB0C2962C418003E4D17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB0B2962C418003E4D17 /* SceneDelegate.swift */; };
 		205AAB0E2962C418003E4D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB0D2962C418003E4D17 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 		205AAB3D2962C5B4003E4D17 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB3C2962C5B4003E4D17 /* Node.swift */; };
 		205AAB3F2962C5ED003E4D17 /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB3E2962C5ED003E4D17 /* LinkList.swift */; };
 		205AAB432962E5FA003E4D17 /* LinkedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB422962E5FA003E4D17 /* LinkedListViewModel.swift */; };
+		20DA10202BF877B500040880 /* ArraysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA101F2BF877B500040880 /* ArraysViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		204C4F822BF20CAB00AB4156 /* BigONotationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigONotationViewModel.swift; sourceTree = "<group>"; };
 		205AAB062962C418003E4D17 /* DataStructuresAndAlgorithmsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresAndAlgorithmsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205AAB092962C418003E4D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205AAB0B2962C418003E4D17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +58,7 @@
 		205AAB3C2962C5B4003E4D17 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		205AAB3E2962C5ED003E4D17 /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
 		205AAB422962E5FA003E4D17 /* LinkedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListViewModel.swift; sourceTree = "<group>"; };
+		20DA101F2BF877B500040880 /* ArraysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204C4F812BF20C8B00AB4156 /* BigONotation */ = {
+			isa = PBXGroup;
+			children = (
+				204C4F822BF20CAB00AB4156 /* BigONotationViewModel.swift */,
+			);
+			path = BigONotation;
+			sourceTree = "<group>";
+		};
 		205AAAFD2962C418003E4D17 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				205AAB3B2962C545003E4D17 /* ApplicationDelegates */,
+				204C4F812BF20C8B00AB4156 /* BigONotation */,
+				20DA101E2BF8777200040880 /* Array */,
 				205AAB3A2962C510003E4D17 /* LinkedList */,
 				205AAB0D2962C418003E4D17 /* ViewController.swift */,
 				205AAB0F2962C418003E4D17 /* Main.storyboard */,
@@ -166,6 +180,14 @@
 				205AAB422962E5FA003E4D17 /* LinkedListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20DA101E2BF8777200040880 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				20DA101F2BF877B500040880 /* ArraysViewModel.swift */,
+			);
+			path = Array;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +254,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					205AAB052962C418003E4D17 = {
 						CreatedOnToolsVersion = 14.2;
@@ -301,9 +323,11 @@
 			files = (
 				205AAB0E2962C418003E4D17 /* ViewController.swift in Sources */,
 				205AAB0A2962C418003E4D17 /* AppDelegate.swift in Sources */,
+				204C4F832BF20CAB00AB4156 /* BigONotationViewModel.swift in Sources */,
 				205AAB3F2962C5ED003E4D17 /* LinkList.swift in Sources */,
 				205AAB432962E5FA003E4D17 /* LinkedListViewModel.swift in Sources */,
 				205AAB0C2962C418003E4D17 /* SceneDelegate.swift in Sources */,
+				20DA10202BF877B500040880 /* ArraysViewModel.swift in Sources */,
 				205AAB3D2962C5B4003E4D17 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +388,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -396,6 +421,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -424,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -456,6 +483,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
