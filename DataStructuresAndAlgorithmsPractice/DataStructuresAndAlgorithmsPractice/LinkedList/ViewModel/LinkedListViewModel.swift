@@ -38,6 +38,8 @@ class LinkedListViewModel: NSObject {
         
         linkList.delete(at: 1)
         linkList.printLinkedList()
+        
+        linkList.clear()
     }
     
     func calculateLengthOfLinkedList() {

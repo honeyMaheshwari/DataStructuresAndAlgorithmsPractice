@@ -96,6 +96,13 @@ class LinkList {
     }
     
     func clear() {
+        var currentNode: Node?
+        var nextNode: Node? = head
+        while nextNode?.next != nil {
+            currentNode = nextNode
+            nextNode = nextNode?.next
+            currentNode?.next = nil
+        }
         head = nil
     }
     
