@@ -11,17 +11,19 @@ enum Contents: CaseIterable {
     case bigONotation(BigONotationViewModel)
     case arrays(ArraysViewModel)
     case linkedList(LinkedListViewModel)
+    case stacksQueues(StacksQueuesViewModel)
     
     var name: String {
         switch self {
         case .bigONotation: return "Big O Notation"
         case .arrays: return "Array"
         case .linkedList: return "Linked List"
+        case .stacksQueues: return "Stacks & Queues"
         }
     }
     
     static var allCases: [Contents] {
-        return [.bigONotation(BigONotationViewModel()), .arrays(ArraysViewModel()), .linkedList(LinkedListViewModel())]
+        return [.bigONotation(BigONotationViewModel()), .arrays(ArraysViewModel()), .linkedList(LinkedListViewModel()), .stacksQueues(StacksQueuesViewModel())]
     }
 }
 
@@ -85,6 +87,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             arrayQuestionPractice(arraysViewModel: arraysViewModel)
         case .linkedList(let linkedListViewModel):
             understandLinkedList(linkedListViewModel: linkedListViewModel)
+        case .stacksQueues(let stacksQueuesViewModel):
+            understandStacksAndQueues(stacksQueuesViewModel: stacksQueuesViewModel)
         }
     }
     

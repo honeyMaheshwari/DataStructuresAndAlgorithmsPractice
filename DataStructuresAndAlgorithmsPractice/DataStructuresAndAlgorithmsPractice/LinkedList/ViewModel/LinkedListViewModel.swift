@@ -200,6 +200,7 @@ extension LinkedListViewModel {
      */
     
     func questionDetectACycle() -> Node {
+        let node6 = Node(data: 6)
         let node5 = Node(data: 5)
         let node4 = Node(data: 4)
         let node3 = Node(data: 3)
@@ -210,7 +211,8 @@ extension LinkedListViewModel {
         node2.next = node3
         node3.next = node4
         node4.next = node5
-        node5.next = node3
+        node5.next = node6
+        node6.next = node3
         return head
     }
     
