@@ -24,6 +24,9 @@
 		205AAB3D2962C5B4003E4D17 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB3C2962C5B4003E4D17 /* Node.swift */; };
 		205AAB3F2962C5ED003E4D17 /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB3E2962C5ED003E4D17 /* LinkList.swift */; };
 		205AAB432962E5FA003E4D17 /* LinkedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB422962E5FA003E4D17 /* LinkedListViewModel.swift */; };
+		2082B3A92C02DADB0060DD2A /* HashTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082B3A82C02DADB0060DD2A /* HashTableViewModel.swift */; };
+		2082B3AB2C02DAF20060DD2A /* ViewController+HashTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082B3AA2C02DAF20060DD2A /* ViewController+HashTables.swift */; };
+		2082B3AD2C02DC010060DD2A /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2082B3AC2C02DC010060DD2A /* HashTable.swift */; };
 		2088DE292BF8A2F0002F2BC8 /* ViewController+BigONotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */; };
 		2088DE2B2BF8A33B002F2BC8 /* ViewController+Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */; };
 		2088DE2D2BF8A35E002F2BC8 /* ViewController+LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088DE2C2BF8A35E002F2BC8 /* ViewController+LinkedList.swift */; };
@@ -69,6 +72,9 @@
 		205AAB3C2962C5B4003E4D17 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		205AAB3E2962C5ED003E4D17 /* LinkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
 		205AAB422962E5FA003E4D17 /* LinkedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListViewModel.swift; sourceTree = "<group>"; };
+		2082B3A82C02DADB0060DD2A /* HashTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTableViewModel.swift; sourceTree = "<group>"; };
+		2082B3AA2C02DAF20060DD2A /* ViewController+HashTables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+HashTables.swift"; sourceTree = "<group>"; };
+		2082B3AC2C02DC010060DD2A /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
 		2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+BigONotation.swift"; sourceTree = "<group>"; };
 		2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Arrays.swift"; sourceTree = "<group>"; };
 		2088DE2C2BF8A35E002F2BC8 /* ViewController+LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+LinkedList.swift"; sourceTree = "<group>"; };
@@ -161,12 +167,14 @@
 				204C4F812BF20C8B00AB4156 /* BigONotation */,
 				20DA101E2BF8777200040880 /* Array */,
 				205AAB3A2962C510003E4D17 /* LinkedList */,
+				2082B3A52C02DA560060DD2A /* HashTables */,
 				202917CD2C004B20003153C2 /* StacksQueues */,
 				205AAB0D2962C418003E4D17 /* ViewController.swift */,
 				2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */,
 				2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */,
 				2088DE2C2BF8A35E002F2BC8 /* ViewController+LinkedList.swift */,
 				202917D72C004E9D003153C2 /* ViewController+StacksQueues.swift */,
+				2082B3AA2C02DAF20060DD2A /* ViewController+HashTables.swift */,
 				205AAB0F2962C418003E4D17 /* Main.storyboard */,
 				205AAB122962C41A003E4D17 /* Assets.xcassets */,
 				205AAB142962C41A003E4D17 /* LaunchScreen.storyboard */,
@@ -225,6 +233,31 @@
 				205AAB422962E5FA003E4D17 /* LinkedListViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2082B3A52C02DA560060DD2A /* HashTables */ = {
+			isa = PBXGroup;
+			children = (
+				2082B3A72C02DABB0060DD2A /* Model */,
+				2082B3A62C02DAAD0060DD2A /* ViewModel */,
+			);
+			path = HashTables;
+			sourceTree = "<group>";
+		};
+		2082B3A62C02DAAD0060DD2A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2082B3A82C02DADB0060DD2A /* HashTableViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2082B3A72C02DABB0060DD2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2082B3AC2C02DC010060DD2A /* HashTable.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		20DA101E2BF8777200040880 /* Array */ = {
@@ -377,10 +410,13 @@
 				205AAB0C2962C418003E4D17 /* SceneDelegate.swift in Sources */,
 				2088DE292BF8A2F0002F2BC8 /* ViewController+BigONotation.swift in Sources */,
 				20DA10202BF877B500040880 /* ArraysViewModel.swift in Sources */,
+				2082B3A92C02DADB0060DD2A /* HashTableViewModel.swift in Sources */,
 				2088DE2D2BF8A35E002F2BC8 /* ViewController+LinkedList.swift in Sources */,
 				2088DE2B2BF8A33B002F2BC8 /* ViewController+Arrays.swift in Sources */,
 				205AAB3D2962C5B4003E4D17 /* Node.swift in Sources */,
 				202917D82C004E9D003153C2 /* ViewController+StacksQueues.swift in Sources */,
+				2082B3AD2C02DC010060DD2A /* HashTable.swift in Sources */,
+				2082B3AB2C02DAF20060DD2A /* ViewController+HashTables.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

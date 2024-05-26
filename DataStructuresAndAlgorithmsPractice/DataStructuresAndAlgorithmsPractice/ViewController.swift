@@ -12,6 +12,7 @@ enum Contents: CaseIterable {
     case arrays(ArraysViewModel)
     case linkedList(LinkedListViewModel)
     case stacksQueues(StacksQueuesViewModel)
+    case hashTables(HashTableViewModel)
     
     var name: String {
         switch self {
@@ -19,11 +20,12 @@ enum Contents: CaseIterable {
         case .arrays: return "Array"
         case .linkedList: return "Linked List"
         case .stacksQueues: return "Stacks & Queues"
+        case .hashTables: return "Hash Tables"
         }
     }
     
     static var allCases: [Contents] {
-        return [.bigONotation(BigONotationViewModel()), .arrays(ArraysViewModel()), .linkedList(LinkedListViewModel()), .stacksQueues(StacksQueuesViewModel())]
+        return [.bigONotation(BigONotationViewModel()), .arrays(ArraysViewModel()), .linkedList(LinkedListViewModel()), .stacksQueues(StacksQueuesViewModel()), .hashTables(HashTableViewModel())]
     }
 }
 
@@ -89,6 +91,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             understandLinkedList(linkedListViewModel: linkedListViewModel)
         case .stacksQueues(let stacksQueuesViewModel):
             understandStacksAndQueues(stacksQueuesViewModel: stacksQueuesViewModel)
+        case .hashTables(let hashTableViewModel):
+            upderstandingHashTables(hashTableViewModel: hashTableViewModel)
         }
     }
     
