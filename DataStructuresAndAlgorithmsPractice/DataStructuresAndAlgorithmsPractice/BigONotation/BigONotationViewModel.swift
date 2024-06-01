@@ -77,5 +77,54 @@ class BigONotationViewModel: NSObject {
         return false
     }
     
+}
+
+extension BigONotationViewModel {
+        
+    //brute force approach - O(n) linear time
+    func linearSearch(numbers: [Int], key: Int) {
+        //check all possible values until we find a match
+        for number in numbers {
+            if (number == key) {
+                let results = "value \(key) found.."
+                print("results -> \(results)")
+                break
+            }
+        }
+    }
+    
+    //the binary approach - O(log n) logarithmic time
+    func binarySearch(numbers: [Int], key: Int, imin: Int, imax: Int) {
+        // find the value at the middle index
+        let midIndex: Int = (imin + imax) / 2
+        let midNumber = numbers[midIndex]
+        
+        //use recursion to reduce the possible search range
+        if midNumber > key {
+            binarySearch(numbers: numbers, key: key, imin: imin, imax: midIndex - 1)
+        } else if midNumber < key {
+            binarySearch(numbers: numbers, key: key, imin: midIndex + 1, imax: imax)
+        } else {
+            let results = "value \(key) found.."
+            print("results -> \(results)")
+        }
+    }
+    
+    func insertionSort(numbersList: [Int]) {
+        print("input -> \(numbersList)")
+        var numbers = numbersList
+        for x in 1 ..< numbers.count {
+            var y = x
+            let temp = numbers[y]
+            print("number at index x -> \(x) is \(temp). y -> \(y)")
+            print("number at index y-1 -> \(y - 1) is \(numbers[y - 1])")
+            while y > 0 && temp < numbers[y - 1] {
+                numbers[y] = numbers[y - 1]
+                y -= 1
+            }
+            numbers[y] = temp
+        }
+        print("output -> \(numbers)")
+    }
     
 }
