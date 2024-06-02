@@ -13,6 +13,7 @@ enum Contents: CaseIterable {
     case linkedList(LinkedListViewModel)
     case stacksQueues(StacksQueuesViewModel)
     case hashTables(HashTableViewModel)
+    case binarySearchTrees(BinarySearchTreeViewModel)
     
     var name: String {
         switch self {
@@ -21,11 +22,12 @@ enum Contents: CaseIterable {
         case .linkedList: return "Linked List"
         case .stacksQueues: return "Stacks & Queues"
         case .hashTables: return "Hash Tables"
+        case .binarySearchTrees: return "Binary Search Trees"
         }
     }
     
     static var allCases: [Contents] {
-        return [.bigONotation(BigONotationViewModel()), .arrays(ArraysViewModel()), .linkedList(LinkedListViewModel()), .stacksQueues(StacksQueuesViewModel()), .hashTables(HashTableViewModel())]
+        return [.bigONotation(BigONotationViewModel()), .arrays(ArraysViewModel()), .linkedList(LinkedListViewModel()), .stacksQueues(StacksQueuesViewModel()), .hashTables(HashTableViewModel()), .binarySearchTrees(BinarySearchTreeViewModel())]
     }
 }
 
@@ -83,16 +85,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let content = contents[indexPath.row]
         switch content {
-        case .bigONotation(let bigONotationViewModel):
-            understandBigONotation(bigONotationViewModel: bigONotationViewModel)
-        case .arrays(let arraysViewModel):
-            arrayQuestionPractice(arraysViewModel: arraysViewModel)
-        case .linkedList(let linkedListViewModel):
-            understandLinkedList(linkedListViewModel: linkedListViewModel)
-        case .stacksQueues(let stacksQueuesViewModel):
-            understandStacksAndQueues(stacksQueuesViewModel: stacksQueuesViewModel)
-        case .hashTables(let hashTableViewModel):
-            upderstandingHashTables(hashTableViewModel: hashTableViewModel)
+        case .bigONotation(let viewModel):
+            understandBigONotation(viewModel: viewModel)
+        case .arrays(let viewModel):
+            arrayQuestionPractice(viewModel: viewModel)
+        case .linkedList(let viewModel):
+            understandLinkedList(viewModel: viewModel)
+        case .stacksQueues(let viewModel):
+            understandStacksAndQueues(viewModel: viewModel)
+        case .hashTables(let viewModel):
+            upderstandingHashTables(viewModel: viewModel)
+        case .binarySearchTrees(let viewModel):
+            upderstandingBinarySearchTrees(viewModel: viewModel)
         }
     }
     

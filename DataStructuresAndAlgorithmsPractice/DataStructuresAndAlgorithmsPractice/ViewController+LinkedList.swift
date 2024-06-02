@@ -9,30 +9,30 @@ import Foundation
 
 extension ViewController {
     
-    func understandLinkedList(linkedListViewModel: LinkedListViewModel) {
+    func understandLinkedList(viewModel: LinkedListViewModel) {
 
-        linkedListViewModel.checkLinkedList()
-        linkedListViewModel.calculateLengthOfLinkedList()
+        viewModel.checkLinkedList()
+        viewModel.calculateLengthOfLinkedList()
         
-        let question = linkedListViewModel.questionFindMerge()
-        if let answerWithBrute = linkedListViewModel.findMergeWithBruteForce(headA: question.headA, headB: question.headB) {
+        let question = viewModel.questionFindMerge()
+        if let answerWithBrute = viewModel.findMergeWithBruteForce(headA: question.headA, headB: question.headB) {
             print("answerWithBrute -> \(answerWithBrute)")
         }
         
-        if let answerWithSpaceTime = linkedListViewModel.findMergeWithSpaceTime(headA: question.headA, headB: question.headB) {
+        if let answerWithSpaceTime = viewModel.findMergeWithSpaceTime(headA: question.headA, headB: question.headB) {
             print("answerWithSpaceTime -> \(answerWithSpaceTime)")
         }
         
-        if let findMergeWithInsignt = linkedListViewModel.findMergeWithInsignt(headA: question.headA, headB: question.headB) {
+        if let findMergeWithInsignt = viewModel.findMergeWithInsignt(headA: question.headA, headB: question.headB) {
             print("findMergeWithInsignt -> \(findMergeWithInsignt)")
         }
         
-        if let findMergeWithReverseInsignt = linkedListViewModel.findMergeWithInsignt(headA: question.headB, headB: question.headA) {
+        if let findMergeWithReverseInsignt = viewModel.findMergeWithInsignt(headA: question.headB, headB: question.headA) {
             print("findMergeWithReverseInsignt -> \(findMergeWithReverseInsignt)")
         }
         
-        let question2Node = linkedListViewModel.questionDetectACycle()
-        let hasCycle = linkedListViewModel.hasCycleWithTortoiseAndHare(first: question2Node)
+        let question2Node = viewModel.questionDetectACycle()
+        let hasCycle = viewModel.hasCycleWithTortoiseAndHare(first: question2Node)
         print("Linked List Cycle Detected status -> \(hasCycle)")
     }
     

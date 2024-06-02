@@ -9,8 +9,8 @@ import Foundation
 
 extension ViewController {
     
-    func upderstandingHashTables(hashTableViewModel: HashTableViewModel) {
-        hashTableViewModel.phoneBookExample()
+    func upderstandingHashTables(viewModel: HashTableViewModel) {
+        viewModel.phoneBookExample()
     }
     
 }

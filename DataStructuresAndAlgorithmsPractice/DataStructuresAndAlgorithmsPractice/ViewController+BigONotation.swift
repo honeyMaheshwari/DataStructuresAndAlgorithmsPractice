@@ -11,35 +11,33 @@ import Foundation
 
 extension ViewController {
 
-    func understandBigONotation(bigONotationViewModel: BigONotationViewModel) {
-        bigONotationViewModel.insertionSort(numbersList: [8, 2, 10, 9, 11, 1, 7, 3, 4])
-        return;
+    func understandBigONotation(viewModel: BigONotationViewModel) {
         
         // Constant time O(1)
-        _ = bigONotationViewModel.constantTime(5)
+        _ = viewModel.constantTime(5)
         
         // Linear time O(n)
-        _ = bigONotationViewModel.linearTime([1, 2, 3])
+        _ = viewModel.linearTime([1, 2, 3])
 
         // Logarithmic time O(log n)
-        _ = bigONotationViewModel.logarithmicTime(128)
+        _ = viewModel.logarithmicTime(128)
 
         // Quadratic time O(n^2)
-        _ = bigONotationViewModel.quadratic(16)
+        _ = viewModel.quadratic(16)
         
         // Question: Given two arrays, create a function that let's a user know whether these two arrays contain any common items.
-        doesTwoArrayCommonItems(bigONotationViewModel: bigONotationViewModel)
+        doesTwoArrayCommonItems(bigONotationViewModel: viewModel)
         
         
         let numbers: Array<Int> = Array<Int>(0...10)
-        bigONotationViewModel.binarySearch(numbers: numbers, key: 7, imin: 0, imax: numbers.count - 1)
+        viewModel.binarySearch(numbers: numbers, key: 7, imin: 0, imax: numbers.count - 1)
         // the above solution is not working if
         /*
          let numbers: Array<Int> = Array<Int>(0...5)
          bigONotationViewModel.binarySearch(numbers: numbers, key: 7, imin: 0, imax: numbers.count - 1)
          */
         
-        bigONotationViewModel.insertionSort(numbersList: [8, 2, 10, 9, 11, 1, 7, 3, 4])
+        viewModel.insertionSort(numbersList: [8, 2, 10, 9, 11, 1, 7, 3, 4])
     }
     
     func doesTwoArrayCommonItems(bigONotationViewModel: BigONotationViewModel) {
