@@ -252,3 +252,37 @@ extension ArraysViewModel {
     }
 
 }
+
+extension ArraysViewModel {
+    
+    // Question: Print Fibonacci Serirs upto n value
+    
+    func printFibonacciSeries(upto n: Int) -> [Int] {
+        var memoization: [Int: Int] = [:]
+        
+        func fibonacciSeries(for index: Int) -> Int {
+            if index == 0 {
+                return 0
+            } else if index == 1 {
+                return 1
+            } else {
+                if let number = memoization[index] {
+                    return number
+                }
+                let number = fibonacciSeries(for: index - 1) + fibonacciSeries(for: index - 2)
+                memoization[index] = number
+                return number
+            }
+        }
+        
+        var serirs: [Int] = []
+        for i in 0...n {
+            let number = fibonacciSeries(for: i)
+            serirs.append(number)
+        }
+        return serirs
+    }
+    
+    
+    
+}

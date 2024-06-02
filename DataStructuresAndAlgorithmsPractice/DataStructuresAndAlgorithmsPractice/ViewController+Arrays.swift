@@ -10,6 +10,7 @@ import Foundation
 extension ViewController {
     
     func arrayQuestionPractice(viewModel: ArraysViewModel) {
+        
         // Not Recommended
         let a1 = viewModel.rotateArrayToRightNTimesWithBruteForce(array: [1, 2, 3, 4, 5], n: 1)  // 5 1 2 3 4
         let a2 = viewModel.rotateArrayToRightNTimesWithBruteForce(array: [1, 2, 3, 4, 5], n: 3)  // 3 4 5 1 2
@@ -58,6 +59,11 @@ extension ViewController {
         print("contact3 ->", contact3)
         print("contact4 ->", contact4)
         print("contact5 ->", contact5)
+        
+        // Question: Print Fibonacci Series upto n value
+        let n = 10
+        let serirs = viewModel.printFibonacciSeries(upto: n)
+        print("Fibonacci Serirs upto \(n) values: -> \(serirs)")
     }
     
 }

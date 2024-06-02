@@ -21,6 +21,8 @@ extension ViewController {
         viewModel.performDeleteOpertaionInBinarySearchTree()
         
         viewModel.performTravseral()
+
+        viewModel.printLeafs()
         
         questionsOnBinaryTree(viewModel: viewModel)
     }

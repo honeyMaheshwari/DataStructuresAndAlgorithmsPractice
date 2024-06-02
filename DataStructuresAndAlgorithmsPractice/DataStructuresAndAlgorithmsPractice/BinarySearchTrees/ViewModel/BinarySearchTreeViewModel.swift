@@ -267,6 +267,44 @@ extension BinarySearchTreeViewModel {
         return node
     }
     
+    
+    // Question 4: Print all leaf nodes?
+    func printLeafs() {
+        print("----- Print all leaf nodes? -----")
+        
+        let input1 = BinarySearchTreeNode(key: 4)
+        input1.left = BinarySearchTreeNode(key: 2)
+        input1.right = BinarySearchTreeNode(key: 6)
+        input1.left?.left = BinarySearchTreeNode(key: 1)
+        input1.left?.right = BinarySearchTreeNode(key: 3)
+        input1.right?.left = BinarySearchTreeNode(key: 5)
+        input1.right?.right = BinarySearchTreeNode(key: 7)
+        
+        print("Input Tree 1: \n")
+        let tree1 = treeString(input1) { ("\($0.key)", $0.left, $0.right) }
+        print(tree1)
+        printLeafNodes(node: input1)
+        print("----- xxx -----\n")
+    }
+    
+    private func printLeafNodes(node: BinarySearchTreeNode?) {
+        guard let node = node else { return }
+        
+        if node.left == nil && node.right == nil {
+            print(node.key)
+            return
+        }
+        
+        if node.left != nil {
+            printLeafNodes(node: node.left)
+        }
+        
+        if node.right != nil {
+            printLeafNodes(node: node.right)
+        }
+        
+    }
+    
 }
 
 
