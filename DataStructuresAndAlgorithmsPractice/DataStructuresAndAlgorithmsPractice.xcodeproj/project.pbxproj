@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2002A5792C12A0BB007F73E1 /* GraphsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002A5782C12A0BB007F73E1 /* GraphsViewModel.swift */; };
+		2002A57B2C12A111007F73E1 /* ViewController+Graphs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002A57A2C12A111007F73E1 /* ViewController+Graphs.swift */; };
+		2002A57D2C12A16B007F73E1 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002A57C2C12A16B007F73E1 /* Graph.swift */; };
 		202917D22C004B81003153C2 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202917D12C004B81003153C2 /* Stack.swift */; };
 		202917D42C004CDF003153C2 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202917D32C004CDF003153C2 /* Queue.swift */; };
 		202917D62C004DF2003153C2 /* StacksQueuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202917D52C004DF2003153C2 /* StacksQueuesViewModel.swift */; };
@@ -61,6 +64,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2002A5782C12A0BB007F73E1 /* GraphsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphsViewModel.swift; sourceTree = "<group>"; };
+		2002A57A2C12A111007F73E1 /* ViewController+Graphs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Graphs.swift"; sourceTree = "<group>"; };
+		2002A57C2C12A16B007F73E1 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		202917D12C004B81003153C2 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		202917D32C004CDF003153C2 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 		202917D52C004DF2003153C2 /* StacksQueuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksQueuesViewModel.swift; sourceTree = "<group>"; };
@@ -126,6 +132,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2002A5752C12A090007F73E1 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				2002A5772C12A0A6007F73E1 /* Model */,
+				2002A5762C12A09D007F73E1 /* ViewModel */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		2002A5762C12A09D007F73E1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2002A5782C12A0BB007F73E1 /* GraphsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2002A5772C12A0A6007F73E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2002A57C2C12A16B007F73E1 /* Graph.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		202917CD2C004B20003153C2 /* StacksQueues */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +248,7 @@
 				2082B3A52C02DA560060DD2A /* HashTables */,
 				202917CD2C004B20003153C2 /* StacksQueues */,
 				20A7C30F2C119F00001EC289 /* SortingAlgorithms */,
+				2002A5752C12A090007F73E1 /* Graphs */,
 				205AAB0D2962C418003E4D17 /* ViewController.swift */,
 				2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */,
 				2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */,
@@ -225,6 +257,7 @@
 				2082B3AA2C02DAF20060DD2A /* ViewController+HashTables.swift */,
 				20323F622C0B2F0900E4F584 /* ViewController+BinarySearchTrees.swift */,
 				20A7C3122C119FA9001EC289 /* ViewController+SortingAlgorithms.swift */,
+				2002A57A2C12A111007F73E1 /* ViewController+Graphs.swift */,
 				205AAB0F2962C418003E4D17 /* Main.storyboard */,
 				205AAB122962C41A003E4D17 /* Assets.xcassets */,
 				205AAB142962C41A003E4D17 /* LaunchScreen.storyboard */,
@@ -481,8 +514,11 @@
 				20323F652C0B308E00E4F584 /* BinarySearchTreeNode.swift in Sources */,
 				205AAB0E2962C418003E4D17 /* ViewController.swift in Sources */,
 				20A7C3172C11A147001EC289 /* BubbleSort.swift in Sources */,
+				2002A5792C12A0BB007F73E1 /* GraphsViewModel.swift in Sources */,
 				20323F672C0B558B00E4F584 /* BinarySearchTree.swift in Sources */,
+				2002A57D2C12A16B007F73E1 /* Graph.swift in Sources */,
 				20A7C3132C119FA9001EC289 /* ViewController+SortingAlgorithms.swift in Sources */,
+				2002A57B2C12A111007F73E1 /* ViewController+Graphs.swift in Sources */,
 				205AAB0A2962C418003E4D17 /* AppDelegate.swift in Sources */,
 				204C4F832BF20CAB00AB4156 /* BigONotationViewModel.swift in Sources */,
 				205AAB3F2962C5ED003E4D17 /* LinkList.swift in Sources */,

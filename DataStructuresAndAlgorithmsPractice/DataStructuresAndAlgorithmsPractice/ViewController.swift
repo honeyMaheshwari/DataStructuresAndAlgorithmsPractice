@@ -15,6 +15,7 @@ enum Contents: CaseIterable {
     case hashTables(HashTableViewModel)
     case binarySearchTrees(BinarySearchTreeViewModel)
     case sortingAlgorithms(SortingAlgorithmsViewModel)
+    case graphs(GraphsViewModel)
     
     var name: String {
         switch self {
@@ -25,6 +26,7 @@ enum Contents: CaseIterable {
         case .hashTables: return "Hash Tables"
         case .binarySearchTrees: return "Binary Search Trees"
         case .sortingAlgorithms: return "Sorting Algorithms"
+        case .graphs: return "Graphs"
         }
     }
     
@@ -36,7 +38,8 @@ enum Contents: CaseIterable {
             .stacksQueues(StacksQueuesViewModel()),
             .hashTables(HashTableViewModel()),
             .binarySearchTrees(BinarySearchTreeViewModel()),
-            .sortingAlgorithms(SortingAlgorithmsViewModel())
+            .sortingAlgorithms(SortingAlgorithmsViewModel()),
+            .graphs(GraphsViewModel())
         ]
     }
 }
@@ -109,6 +112,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             upderstandingBinarySearchTrees(viewModel: viewModel)
         case .sortingAlgorithms(let viewModel):
             upderstandingSortingAlgorithms(viewModel: viewModel)
+        case .graphs(let viewModel):
+            upderstandingGraphs(viewModel: viewModel)
         }
     }
     
