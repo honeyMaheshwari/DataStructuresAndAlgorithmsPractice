@@ -34,6 +34,12 @@
 		2088DE292BF8A2F0002F2BC8 /* ViewController+BigONotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */; };
 		2088DE2B2BF8A33B002F2BC8 /* ViewController+Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */; };
 		2088DE2D2BF8A35E002F2BC8 /* ViewController+LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088DE2C2BF8A35E002F2BC8 /* ViewController+LinkedList.swift */; };
+		20A7C3112C119F45001EC289 /* SortingAlgorithmsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C3102C119F45001EC289 /* SortingAlgorithmsViewModel.swift */; };
+		20A7C3132C119FA9001EC289 /* ViewController+SortingAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C3122C119FA9001EC289 /* ViewController+SortingAlgorithms.swift */; };
+		20A7C3172C11A147001EC289 /* BubbleSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C3162C11A147001EC289 /* BubbleSort.swift */; };
+		20A7C3192C11AFB0001EC289 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C3182C11AFB0001EC289 /* MergeSort.swift */; };
+		20A7C31B2C11BBC6001EC289 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C31A2C11BBC6001EC289 /* QuickSort.swift */; };
+		20A7C31D2C11C7F1001EC289 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C31C2C11C7F1001EC289 /* InsertionSort.swift */; };
 		20DA10202BF877B500040880 /* ArraysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA101F2BF877B500040880 /* ArraysViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +92,12 @@
 		2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+BigONotation.swift"; sourceTree = "<group>"; };
 		2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Arrays.swift"; sourceTree = "<group>"; };
 		2088DE2C2BF8A35E002F2BC8 /* ViewController+LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+LinkedList.swift"; sourceTree = "<group>"; };
+		20A7C3102C119F45001EC289 /* SortingAlgorithmsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingAlgorithmsViewModel.swift; sourceTree = "<group>"; };
+		20A7C3122C119FA9001EC289 /* ViewController+SortingAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+SortingAlgorithms.swift"; sourceTree = "<group>"; };
+		20A7C3162C11A147001EC289 /* BubbleSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleSort.swift; sourceTree = "<group>"; };
+		20A7C3182C11AFB0001EC289 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
+		20A7C31A2C11BBC6001EC289 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
+		20A7C31C2C11C7F1001EC289 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		20DA101F2BF877B500040880 /* ArraysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -204,6 +216,7 @@
 				205AAB3A2962C510003E4D17 /* LinkedList */,
 				2082B3A52C02DA560060DD2A /* HashTables */,
 				202917CD2C004B20003153C2 /* StacksQueues */,
+				20A7C30F2C119F00001EC289 /* SortingAlgorithms */,
 				205AAB0D2962C418003E4D17 /* ViewController.swift */,
 				2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */,
 				2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */,
@@ -211,6 +224,7 @@
 				202917D72C004E9D003153C2 /* ViewController+StacksQueues.swift */,
 				2082B3AA2C02DAF20060DD2A /* ViewController+HashTables.swift */,
 				20323F622C0B2F0900E4F584 /* ViewController+BinarySearchTrees.swift */,
+				20A7C3122C119FA9001EC289 /* ViewController+SortingAlgorithms.swift */,
 				205AAB0F2962C418003E4D17 /* Main.storyboard */,
 				205AAB122962C41A003E4D17 /* Assets.xcassets */,
 				205AAB142962C41A003E4D17 /* LaunchScreen.storyboard */,
@@ -292,6 +306,34 @@
 			isa = PBXGroup;
 			children = (
 				2082B3AC2C02DC010060DD2A /* HashTable.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20A7C30F2C119F00001EC289 /* SortingAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				20A7C3152C11A127001EC289 /* Model */,
+				20A7C3142C11A11A001EC289 /* ViewModel */,
+			);
+			path = SortingAlgorithms;
+			sourceTree = "<group>";
+		};
+		20A7C3142C11A11A001EC289 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				20A7C3102C119F45001EC289 /* SortingAlgorithmsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		20A7C3152C11A127001EC289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20A7C3162C11A147001EC289 /* BubbleSort.swift */,
+				20A7C3182C11AFB0001EC289 /* MergeSort.swift */,
+				20A7C31A2C11BBC6001EC289 /* QuickSort.swift */,
+				20A7C31C2C11C7F1001EC289 /* InsertionSort.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -435,9 +477,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20A7C3192C11AFB0001EC289 /* MergeSort.swift in Sources */,
 				20323F652C0B308E00E4F584 /* BinarySearchTreeNode.swift in Sources */,
 				205AAB0E2962C418003E4D17 /* ViewController.swift in Sources */,
+				20A7C3172C11A147001EC289 /* BubbleSort.swift in Sources */,
 				20323F672C0B558B00E4F584 /* BinarySearchTree.swift in Sources */,
+				20A7C3132C119FA9001EC289 /* ViewController+SortingAlgorithms.swift in Sources */,
 				205AAB0A2962C418003E4D17 /* AppDelegate.swift in Sources */,
 				204C4F832BF20CAB00AB4156 /* BigONotationViewModel.swift in Sources */,
 				205AAB3F2962C5ED003E4D17 /* LinkList.swift in Sources */,
@@ -445,14 +490,17 @@
 				202917D62C004DF2003153C2 /* StacksQueuesViewModel.swift in Sources */,
 				202917D22C004B81003153C2 /* Stack.swift in Sources */,
 				205AAB432962E5FA003E4D17 /* LinkedListViewModel.swift in Sources */,
+				20A7C31B2C11BBC6001EC289 /* QuickSort.swift in Sources */,
 				205AAB0C2962C418003E4D17 /* SceneDelegate.swift in Sources */,
 				2088DE292BF8A2F0002F2BC8 /* ViewController+BigONotation.swift in Sources */,
 				20DA10202BF877B500040880 /* ArraysViewModel.swift in Sources */,
+				20A7C31D2C11C7F1001EC289 /* InsertionSort.swift in Sources */,
 				2082B3A92C02DADB0060DD2A /* HashTableViewModel.swift in Sources */,
 				2088DE2D2BF8A35E002F2BC8 /* ViewController+LinkedList.swift in Sources */,
 				20323F632C0B2F0900E4F584 /* ViewController+BinarySearchTrees.swift in Sources */,
 				2088DE2B2BF8A33B002F2BC8 /* ViewController+Arrays.swift in Sources */,
 				20323F612C0B2EA200E4F584 /* BinarySearchTreeViewModel.swift in Sources */,
+				20A7C3112C119F45001EC289 /* SortingAlgorithmsViewModel.swift in Sources */,
 				205AAB3D2962C5B4003E4D17 /* Node.swift in Sources */,
 				202917D82C004E9D003153C2 /* ViewController+StacksQueues.swift in Sources */,
 				2082B3AD2C02DC010060DD2A /* HashTable.swift in Sources */,

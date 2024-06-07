@@ -28,7 +28,6 @@ extension ViewController {
         // Question: Given two arrays, create a function that let's a user know whether these two arrays contain any common items.
         doesTwoArrayCommonItems(bigONotationViewModel: viewModel)
         
-        
         let numbers: Array<Int> = Array<Int>(0...10)
         viewModel.binarySearch(numbers: numbers, key: 7, imin: 0, imax: numbers.count - 1)
         // the above solution is not working if
@@ -36,8 +35,6 @@ extension ViewController {
          let numbers: Array<Int> = Array<Int>(0...5)
          bigONotationViewModel.binarySearch(numbers: numbers, key: 7, imin: 0, imax: numbers.count - 1)
          */
-        
-        viewModel.insertionSort(numbersList: [8, 2, 10, 9, 11, 1, 7, 3, 4])
     }
     
     func doesTwoArrayCommonItems(bigONotationViewModel: BigONotationViewModel) {

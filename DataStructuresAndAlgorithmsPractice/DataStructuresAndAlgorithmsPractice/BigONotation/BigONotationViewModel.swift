@@ -110,21 +110,4 @@ extension BigONotationViewModel {
         }
     }
     
-    func insertionSort(numbersList: [Int]) {
-        print("input -> \(numbersList)")
-        var numbers = numbersList
-        for x in 1 ..< numbers.count {
-            var y = x
-            let temp = numbers[y]
-            print("number at index x -> \(x) is \(temp). y -> \(y)")
-            print("number at index y-1 -> \(y - 1) is \(numbers[y - 1])")
-            while y > 0 && temp < numbers[y - 1] {
-                numbers[y] = numbers[y - 1]
-                y -= 1
-            }
-            numbers[y] = temp
-        }
-        print("output -> \(numbers)")
-    }
-    
 }
