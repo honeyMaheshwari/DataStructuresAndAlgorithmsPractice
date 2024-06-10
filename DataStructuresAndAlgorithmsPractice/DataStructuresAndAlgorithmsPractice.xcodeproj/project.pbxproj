@@ -19,6 +19,8 @@
 		20323F652C0B308E00E4F584 /* BinarySearchTreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20323F642C0B308E00E4F584 /* BinarySearchTreeNode.swift */; };
 		20323F672C0B558B00E4F584 /* BinarySearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20323F662C0B558B00E4F584 /* BinarySearchTree.swift */; };
 		204C4F832BF20CAB00AB4156 /* BigONotationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C4F822BF20CAB00AB4156 /* BigONotationViewModel.swift */; };
+		204CD5902C1715C6001C93AA /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204CD58F2C1715C6001C93AA /* QuestionsViewModel.swift */; };
+		204CD5922C171623001C93AA /* ViewController+Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204CD5912C171623001C93AA /* ViewController+Questions.swift */; };
 		205AAB0A2962C418003E4D17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB092962C418003E4D17 /* AppDelegate.swift */; };
 		205AAB0C2962C418003E4D17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB0B2962C418003E4D17 /* SceneDelegate.swift */; };
 		205AAB0E2962C418003E4D17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205AAB0D2962C418003E4D17 /* ViewController.swift */; };
@@ -76,6 +78,8 @@
 		20323F642C0B308E00E4F584 /* BinarySearchTreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTreeNode.swift; sourceTree = "<group>"; };
 		20323F662C0B558B00E4F584 /* BinarySearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTree.swift; sourceTree = "<group>"; };
 		204C4F822BF20CAB00AB4156 /* BigONotationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigONotationViewModel.swift; sourceTree = "<group>"; };
+		204CD58F2C1715C6001C93AA /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		204CD5912C171623001C93AA /* ViewController+Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Questions.swift"; sourceTree = "<group>"; };
 		205AAB062962C418003E4D17 /* DataStructuresAndAlgorithmsPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructuresAndAlgorithmsPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205AAB092962C418003E4D17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205AAB0B2962C418003E4D17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -217,6 +221,14 @@
 			path = BigONotation;
 			sourceTree = "<group>";
 		};
+		204CD58E2C1715AC001C93AA /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				204CD58F2C1715C6001C93AA /* QuestionsViewModel.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
 		205AAAFD2962C418003E4D17 = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +261,7 @@
 				202917CD2C004B20003153C2 /* StacksQueues */,
 				20A7C30F2C119F00001EC289 /* SortingAlgorithms */,
 				2002A5752C12A090007F73E1 /* Graphs */,
+				204CD58E2C1715AC001C93AA /* Questions */,
 				205AAB0D2962C418003E4D17 /* ViewController.swift */,
 				2088DE282BF8A2F0002F2BC8 /* ViewController+BigONotation.swift */,
 				2088DE2A2BF8A33B002F2BC8 /* ViewController+Arrays.swift */,
@@ -258,6 +271,7 @@
 				20323F622C0B2F0900E4F584 /* ViewController+BinarySearchTrees.swift */,
 				20A7C3122C119FA9001EC289 /* ViewController+SortingAlgorithms.swift */,
 				2002A57A2C12A111007F73E1 /* ViewController+Graphs.swift */,
+				204CD5912C171623001C93AA /* ViewController+Questions.swift */,
 				205AAB0F2962C418003E4D17 /* Main.storyboard */,
 				205AAB122962C41A003E4D17 /* Assets.xcassets */,
 				205AAB142962C41A003E4D17 /* LaunchScreen.storyboard */,
@@ -520,6 +534,7 @@
 				20A7C3132C119FA9001EC289 /* ViewController+SortingAlgorithms.swift in Sources */,
 				2002A57B2C12A111007F73E1 /* ViewController+Graphs.swift in Sources */,
 				205AAB0A2962C418003E4D17 /* AppDelegate.swift in Sources */,
+				204CD5902C1715C6001C93AA /* QuestionsViewModel.swift in Sources */,
 				204C4F832BF20CAB00AB4156 /* BigONotationViewModel.swift in Sources */,
 				205AAB3F2962C5ED003E4D17 /* LinkList.swift in Sources */,
 				202917D42C004CDF003153C2 /* Queue.swift in Sources */,
@@ -533,6 +548,7 @@
 				20A7C31D2C11C7F1001EC289 /* InsertionSort.swift in Sources */,
 				2082B3A92C02DADB0060DD2A /* HashTableViewModel.swift in Sources */,
 				2088DE2D2BF8A35E002F2BC8 /* ViewController+LinkedList.swift in Sources */,
+				204CD5922C171623001C93AA /* ViewController+Questions.swift in Sources */,
 				20323F632C0B2F0900E4F584 /* ViewController+BinarySearchTrees.swift in Sources */,
 				2088DE2B2BF8A33B002F2BC8 /* ViewController+Arrays.swift in Sources */,
 				20323F612C0B2EA200E4F584 /* BinarySearchTreeViewModel.swift in Sources */,
