@@ -11,6 +11,10 @@ class BinarySearchTree {
     
     var root: BinarySearchTreeNode?
     
+    init(root: BinarySearchTreeNode? = nil) {
+        self.root = root
+    }
+    
     func insert(key: Int) {
         root = insertItem(node: root, key: key)
     }
@@ -151,7 +155,7 @@ extension BinarySearchTree {
         return node
     }
     
-    private func printTree(prefix: String, n: BinarySearchTreeNode, isLeft: Bool) {
+    func printTree(prefix: String, n: BinarySearchTreeNode, isLeft: Bool) {
         print(prefix, (isLeft ? "|-- " : "\\-- "), n.key)
         if n.left != nil {
             printTree(prefix: "\(prefix) \(isLeft ? "|   " : "   ") ", n: n.left!, isLeft: true)
@@ -179,6 +183,53 @@ extension BinarySearchTree {
         
         // Else we are at the node which is the LCA
         return node
+    }
+    
+}
+
+
+extension BinarySearchTree {
+    
+    /*
+     // Challenge: T1 is a large binary tree and T2 is a smaller one. Write an algorithm to determine if T2 is a subtree of T1.
+     
+     Root
+                    5
+                  3   7
+                 2 4 6 8
+     
+     Subtree
+                    7
+                   6 8
+     
+     */
+    func isSubTree(_ tree: BinarySearchTreeNode, _ subTree: BinarySearchTreeNode) -> Bool {
+        /*
+        if tree.key == subTree.key {
+            return tree.left?.key == subTree.left?.key && tree.right?.key == subTree.right?.key
+        } else if tree.key > subTree.key, tree.left != nil {
+            return isSubTree(tree.left!, subTree)
+        } else if tree.key < subTree.key, tree.right != nil{
+            return isSubTree(tree.right!, subTree)
+        }
+         */
+        
+        let rootStringRepresentation = treeStringRepresentation(node: tree)
+        let subTreeStringRepresentation = treeStringRepresentation(node: subTree)
+        return rootStringRepresentation.contains(subTreeStringRepresentation)
+    }
+    
+    private func treeStringRepresentation(node: BinarySearchTreeNode) -> String {
+        var string = ""
+        preOrderTraversalString(node: node, result: &string)
+        return string
+    }
+    
+    private func preOrderTraversalString(node: BinarySearchTreeNode?, result: inout String) {
+        guard let node = node else { return }
+        result.append("\(node.key)")
+        preOrderTraversalString(node: node.left, result: &result)
+        preOrderTraversalString(node: node.right, result: &result)
     }
     
 }

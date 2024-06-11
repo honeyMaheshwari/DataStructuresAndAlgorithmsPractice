@@ -11,6 +11,10 @@ class LinkList {
     
     private var head: Node?
     
+    init(head: Node? = nil) {
+        self.head = head
+    }
+    
     var isEmpty: Bool {
         head == nil
     }
@@ -116,6 +120,46 @@ class LinkList {
             node = node?.next
         }
         print(result)
+    }
+    
+    // Challenge: Write a method that removes any duplicates from our Linked List.
+    func removeDuplictates() {
+        var currentNode = head
+        var previousNode: Node?
+        var uniques = Set<Int>()
+        
+        while currentNode != nil {
+            if uniques.contains(currentNode!.data) {
+                previousNode?.next = currentNode?.next
+            } else {
+                uniques.insert(currentNode!.data)
+                previousNode = currentNode
+            }
+            currentNode = currentNode?.next
+        }
+        
+        
+        /*
+        var node = head
+        var dict: [Int: Int] = [:]
+        var previousNode: Node?
+        
+        while node?.next != nil {
+            if let data = node?.data {
+                if dict[data] != nil {
+                    previousNode?.next = node?.next
+                } else {
+                    dict[data] = 1
+                    previousNode = node
+                }
+            }
+            node = node?.next
+        }
+        
+        if let data = node?.data, dict[data] != nil {
+            previousNode?.next = nil
+        }
+         */
     }
     
 }
