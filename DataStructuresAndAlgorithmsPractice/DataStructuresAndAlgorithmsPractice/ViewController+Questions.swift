@@ -10,7 +10,6 @@ import Foundation
 extension ViewController {
     
     func practiceQuestions(viewModel: QuestionsViewModel) {
-        /*
         question1(viewModel: viewModel)
         
         question2(viewModel: viewModel)
@@ -22,9 +21,10 @@ extension ViewController {
         question5(viewModel: viewModel)
         
         question6()
-         */
         
         question7()
+        
+        question8()
     }
     
     func question1(viewModel: QuestionsViewModel) {
@@ -177,5 +177,54 @@ extension ViewController {
         print("----- xxx -----\n")
     }
     
+    // Challenge: Design a stack which, in addition to push and pop, has a function 'min' which returns the minimum element? Push, pop and min should all operate in O(1) time.
+    /*
+     Stacks can be implemented as either arrays or via a linked list. If we do it with a linked list, we can store the current minimum value with each new node as we pop it onto the list.
+     That way we have a running record of what the current min was, and the time the node was added.
+     */
+    func question8() {
+        print("----- Design a stack which, in addition to push and pop, has a function 'min' which returns the minimum element? Push, pop and min should all operate in O(1) time. -----")
+        let stack = MinStackLinkedList()
+        stack.push(5)
+        stack.push(6)
+        stack.push(3)
+        stack.push(7)
+        print("input: ")
+        stack.printLinkedList()
+        var min = stack.min()       // 3
+        print("current min -> \(min ?? 0)")
+        var pop = stack.pop()
+        print("pop value from stack -> \(pop ?? 0)")
+        min = stack.min()       // 3
+        print("current min -> \(min ?? 0)")
+        pop = stack.pop()
+        print("pop value from stack -> \(pop ?? 0)")
+        min = stack.min()       // 5
+        print("current min -> \(min ?? 0)")
+        
+        print("\n\n", "new inputs", "\n")
+        
+        let minStackWithArray = MinStackWithArray()
+        minStackWithArray.push(3)
+        minStackWithArray.push(5)
+        print("input: ")
+        minStackWithArray.printStack()
+        min = minStackWithArray.min()
+        print("currnet min: \(min ?? 0)") // 3
+        minStackWithArray.push(2)
+        minStackWithArray.push(1)
+        min = minStackWithArray.min()
+        print("currnet min: \(min ?? 0)") // 1
+        pop = minStackWithArray.pop()
+        print("pop value from stack -> \(pop ?? 0)")
+        min = minStackWithArray.min()
+        print("currnet min: \(min ?? 0)") // 2
+        pop = minStackWithArray.pop()
+        print("pop value from stack -> \(pop ?? 0)")
+        min = minStackWithArray.min()
+        print("currnet min: \(min ?? 0)") // 3
+        
+        print("----- xxx -----\n")
+    }
     
 }

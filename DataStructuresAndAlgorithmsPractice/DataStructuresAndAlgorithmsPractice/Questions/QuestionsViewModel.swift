@@ -9,7 +9,7 @@ import Foundation
 
 class QuestionsViewModel {
     
-    // Challenge 1: Given a string, see if you can detect whether it contains only unique chars.
+    // Challenge: Given a string, see if you can detect whether it contains only unique chars.
     func isUnique(_ text: String) -> Bool {
         let characters = Array(text)
         let charactersSet = Set(characters)
@@ -27,7 +27,7 @@ class QuestionsViewModel {
         */
     }
     
-    // Challenge 2: Given two strings, check if one is a permutation of the other.
+    // Challenge: Given two strings, check if one is a permutation of the other.
     func isPermutation(_ text: String, _ perm: String) -> Bool {
         guard text.count == perm.count else {
             return false
@@ -46,7 +46,7 @@ class QuestionsViewModel {
         return text.sorted() == perm.sorted()
     }
     
-    // Challenge 3: See if you can replaces all the spaces in a a string with the ASCII symbol for space '%20'. Assume you are given the length of the final string. Hint: Use array of char[].
+    // Challenge: See if you can replaces all the spaces in a a string with the ASCII symbol for space '%20'. Assume you are given the length of the final string. Hint: Use array of char[].
     func urlify(_ url: String, length: Int) -> String {
         guard !url.isEmpty else { return url }
         
@@ -68,7 +68,7 @@ class QuestionsViewModel {
     }
     
     /*
-      Challenge 4: There are three types of edits that can be performed on strings:
+      Challenge: There are three types of edits that can be performed on strings:
       - insert a character
       - remove a character, or
       - replace a character.
@@ -122,7 +122,7 @@ class QuestionsViewModel {
         }
     }
     
-    // Challenge 5: Give a string with repeating characters (i.e. "aaabb") write an algorithm that will compress the string down to the character, followed by the number of times it appears in the string (i.e "a3b2"). If the compressed string is not smaller than original, return original.
+    // Challenge: Give a string with repeating characters (i.e. "aaabb") write an algorithm that will compress the string down to the character, followed by the number of times it appears in the string (i.e "a3b2"). If the compressed string is not smaller than original, return original.
     func compress(_ str: String) -> String {
         guard str.count > 2 else {
             return str

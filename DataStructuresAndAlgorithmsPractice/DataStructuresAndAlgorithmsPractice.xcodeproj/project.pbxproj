@@ -46,6 +46,7 @@
 		20A7C31B2C11BBC6001EC289 /* QuickSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C31A2C11BBC6001EC289 /* QuickSort.swift */; };
 		20A7C31D2C11C7F1001EC289 /* InsertionSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A7C31C2C11C7F1001EC289 /* InsertionSort.swift */; };
 		20DA10202BF877B500040880 /* ArraysViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA101F2BF877B500040880 /* ArraysViewModel.swift */; };
+		20DB3FEF2C194B2C0049FF24 /* MinStackLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DB3FEE2C194B2C0049FF24 /* MinStackLinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		20A7C31A2C11BBC6001EC289 /* QuickSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickSort.swift; sourceTree = "<group>"; };
 		20A7C31C2C11C7F1001EC289 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		20DA101F2BF877B500040880 /* ArraysViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArraysViewModel.swift; sourceTree = "<group>"; };
+		20DB3FEE2C194B2C0049FF24 /* MinStackLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStackLinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 			children = (
 				202917D12C004B81003153C2 /* Stack.swift */,
 				202917D32C004CDF003153C2 /* Queue.swift */,
+				20DB3FEE2C194B2C0049FF24 /* MinStackLinkedList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20A7C3192C11AFB0001EC289 /* MergeSort.swift in Sources */,
+				20DB3FEF2C194B2C0049FF24 /* MinStackLinkedList.swift in Sources */,
 				20323F652C0B308E00E4F584 /* BinarySearchTreeNode.swift in Sources */,
 				205AAB0E2962C418003E4D17 /* ViewController.swift in Sources */,
 				20A7C3172C11A147001EC289 /* BubbleSort.swift in Sources */,
